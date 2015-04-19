@@ -61,9 +61,6 @@ public class AppDirectController {
 
 	@Resource(name = "oAuthProps")
 	private Properties oAuthProps;
-	
-	private static final String consumerSecret = "ds0bkNr0mHfclJHE";
-	private static final String consumerKey = "integrationchallenge1-21051";
 
 	@RequestMapping(value = "/create", method = RequestMethod.GET, headers = "Accept=application/xml", produces = "application/xml")
 	public @ResponseBody CreateResult create(
@@ -99,7 +96,9 @@ public class AppDirectController {
 
 			return result;
 
-		} catch (Exception e) {			e.printStackTrace();
+		} catch (Exception e) {			
+			e.printStackTrace();
+			
 			result.setSuccess("false");
 			result.setErrorCode("1");
 			result.setMessage("Failed with following message: "
@@ -140,7 +139,9 @@ public class AppDirectController {
 
 			return result;
 
-		} catch (Exception e) {			e.printStackTrace();
+		} catch (Exception e) {			
+			e.printStackTrace();
+			
 			result.setSuccess("false");
 			result.setErrorCode("1");
 			result.setMessage("Failed with following message: "
@@ -289,7 +290,9 @@ public class AppDirectController {
 
 			return result;
 
-		} catch (Exception e) {			e.printStackTrace();
+		} catch (Exception e) {			
+			e.printStackTrace();
+			
 			result.setSuccess("false");
 			result.setErrorCode("1");
 			result.setMessage("Failed with following message: "
@@ -328,6 +331,7 @@ public class AppDirectController {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 			result.setSuccess("false");
 			result.setErrorCode("1");
 			result.setMessage("Failed with following message: "

@@ -7,8 +7,8 @@ The app was deployed to CloudFoundry and Google appengine.
 To deploy on CloudFoundry: Pivotal tc Server Integration for Eclipse 	(https://integrationchallenge.cfapps.io/)
 To deploy on GAE: 'mvn appengine:update'				(https://app1challenge.appspot.com/)
 
-The app is configured at https://www.appdirect.com/apps/21051	for CloudFoundry (GAE doesnt allow sockets)
-on my developers account (mathieu.bilodeau.3@gmail.com)
+The app is configured at https://www.appdirect.com/apps/21051	for CloudFoundry (GAE doesnt allow sockets - needed for openid implementation)
+on my AppDirect developers account (mathieu.bilodeau.3@gmail.com)
 
 
 https://integrationchallenge.cfapps.io/history	(list of events)
