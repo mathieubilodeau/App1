@@ -1,0 +1,29 @@
+The code can be found on my GitHub account. 				(https://github.com/mathieubilodeau/app1)
+
+A war file can be generated using 'mvn package'.
+
+The app was deployed to CloudFoundry and Google appengine.
+
+To deploy on CloudFoundry: Pivotal tc Server Integration for Eclipse 	(https://integrationchallenge.cfapps.io/)
+To deploy on GAE: 'mvn appengine:update'				(https://app1challenge.appspot.com/)
+
+The app is configured at https://www.appdirect.com/apps/21051	for CloudFoundry (GAE doesnt allow sockets)
+on my developers account (mathieu.bilodeau.3@gmail.com)
+
+
+https://integrationchallenge.cfapps.io/history	(list of events)
+https://integrationchallenge.cfapps.io/users	(list of users)
+
+app direct integration:
+
+oauth consumerKey and consumerSecret defined at src/main/com/challenge/app1/oauth.properties
+
+login: 		https://integrationchallenge.cfapps.io/login?openid={openid}&accountIdentifier={accountIdentifier}
+openid realm: 	https://integrationchallenge.cfapps.io/*
+create: 	https://integrationchallenge.cfapps.io/service/create?url={eventUrl}
+change: 	https://integrationchallenge.cfapps.io/service/change?url={eventUrl}
+cancel: 	https://integrationchallenge.cfapps.io/service/cancel?url={eventUrl}
+status: 	https://integrationchallenge.cfapps.io/service/notice?url={eventUrl}
+addon: 		https://integrationchallenge.cfapps.io/service/addon?url={eventUrl}
+assignement: 	https://integrationchallenge.cfapps.io/service/assign?url={eventUrl}
+unassignment: 	https://integrationchallenge.cfapps.io/service/unassign?url={eventUrl}
